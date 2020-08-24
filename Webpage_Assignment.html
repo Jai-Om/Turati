@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<title>Turati Assignment</title>
-		
 		<style>
 			body {
 				text-align: center;
@@ -21,25 +20,49 @@
 				color: #1E1B1C; 
 			}
 			
+			::-webkit-scrollbar {
+			  width: 12px;
+			}
+			
+			::-webkit-scrollbar-track {
+			  background: #ecb3ff; 
+			}
+			
+			::-webkit-scrollbar-thumb {
+			  background: #ff9999; 
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555; 
+			}
 		</style>
 	</head>
 	
 	<body>
 		<div class="header">
-			<h2>Assignment Webpage</h2>
+			<h2>Manchester United Player Ratings</h2>
 		</div>
 		
 		<p>
 			Feel free to contact us and share your opinion regarding the players' ratings! <br>
 			<i> Enjoy the video!!! </i> <br>
 			<br>
-			
 			<iframe 
 				width="750" height="400" src="https://www.youtube.com/embed/VHI6HXNuTlY" 
 				frameborder="6" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 				allowfullscreen>
 			</iframe>
+			<br> Looking forward to hearing from you... <br>
+			
+			<form method="post" action="php_form.php">
+				Name: <br>
+				<input type="text" size="25" name="name"><br>
+				E-mail: <br>
+				<input type="text" size="25" name="mail"><br>
+				Comment: <br> 
+				<textarea  name="comment" rows="6" cols="27"></textarea><br><br>
+				<input type="submit" value="Submit">
+			</form>
 		</p>
-	
 	</body>
 </html>
